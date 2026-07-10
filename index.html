@@ -1,28 +1,43 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>IR Tech Academy</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>IR Tech Academy</title>
+
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
 background:#f4f4f4;
+line-height:1.6;
 }
 
 header{
-background:#0d6efd;
+background:#0066ff;
 color:white;
-padding:20px;
 text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
 }
 
 nav{
 background:#222;
-padding:10px;
+padding:15px;
 text-align:center;
 }
 
@@ -31,39 +46,60 @@ color:white;
 text-decoration:none;
 margin:15px;
 font-weight:bold;
+font-size:18px;
 }
 
 .hero{
-padding:40px;
-text-align:center;
 background:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
 }
 
 .course{
 background:white;
 margin:20px;
-padding:20px;
+padding:25px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
+.course h2{
+margin-bottom:15px;
+}
+
 button{
-background:#0d6efd;
+background:#0066ff;
 color:white;
 border:none;
-padding:10px 20px;
+padding:12px 20px;
 border-radius:5px;
 cursor:pointer;
+margin-top:10px;
+font-size:16px;
+}
+
+button:hover{
+background:#0044cc;
 }
 
 footer{
 background:#222;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 margin-top:20px;
 }
 </style>
+
 </head>
 
 <body>
@@ -82,29 +118,63 @@ margin-top:20px;
 
 <div class="hero">
 <h2>Welcome to IR Tech Academy</h2>
-<p>Learn Programming, MS Office, AI and Machine Learning with Premium PDFs.</p>
+<p>
+Learn Programming, Microsoft Office, Artificial Intelligence
+and Machine Learning with Premium PDFs and Notes.
+</p>
 </div>
 
 <div class="course">
 <h2>Programming PDFs</h2>
 <p>C, C++, Java, Python, JavaScript</p>
-<button>Buy Now</button>
+<button onclick="window.open('https://wa.me/916206175829')">
+Buy Now
+</button>
 </div>
 
 <div class="course">
 <h2>Microsoft Office PDFs</h2>
-<p>Word, Excel, PowerPoint, Access</p>
-<button>Buy Now</button>
+<p>MS Word, Excel, PowerPoint, Access</p>
+<button onclick="window.open('https://wa.me/916206175829')">
+Buy Now
+</button>
 </div>
 
 <div class="course">
 <h2>AI & Machine Learning PDFs</h2>
 <p>Beginner to Advanced Level Notes</p>
-<button>Buy Now</button>
+<button onclick="window.open('https://wa.me/916206175829')">
+Buy Now
+</button>
+</div>
+
+<div class="course">
+<h2>About IR Tech Academy</h2>
+<p>
+IR Tech Academy is an online learning platform dedicated to helping
+students learn modern technology skills. We provide high-quality
+study materials, notes, tutorials and premium PDFs on Programming,
+Microsoft Office, Artificial Intelligence and Machine Learning.
+</p>
+</div>
+
+<div class="course">
+<h2>Contact Us</h2>
+
+<p><b>Email:</b> rzamdistiyaque@gmail.com</p>
+
+<p><b>WhatsApp:</b> +91 6206175829</p>
+
+<p><b>YouTube:</b> @IRTechAcademy01</p>
+
+<button onclick="window.open('https://www.youtube.com/@IRTechAcademy01')">
+Visit YouTube Channel
+</button>
 </div>
 
 <footer>
 <p>© 2026 IR Tech Academy</p>
+<p>Programming | Microsoft Office | AI & Machine Learning</p>
 </footer>
 
 </body>

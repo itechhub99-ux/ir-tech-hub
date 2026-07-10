@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>IR Tech Academy</title>
 
 <style>
@@ -15,15 +14,23 @@ box-sizing:border-box;
 
 body{
 font-family:Arial,sans-serif;
-background:#f4f4f4;
-line-height:1.6;
+background:#f4f7fb;
+color:#333;
 }
 
 header{
-background:#0066ff;
-color:white;
+background:linear-gradient(135deg,#0052cc,#001d3d);
+color:#fff;
 text-align:center;
 padding:40px 20px;
+}
+
+header img{
+width:160px;
+height:160px;
+border-radius:50%;
+border:4px solid #fff;
+margin-bottom:15px;
 }
 
 header h1{
@@ -31,134 +38,165 @@ font-size:40px;
 }
 
 header p{
-font-size:20px;
 margin-top:10px;
+font-size:20px;
 }
 
 nav{
-background:#222;
+background:#111;
 padding:15px;
-text-align:center;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:20px;
+flex-wrap:wrap;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
-margin:15px;
 font-weight:bold;
-font-size:18px;
 }
 
 .hero{
-background:white;
+padding:60px 20px;
 text-align:center;
-padding:50px 20px;
+background:#fff;
 }
 
 .hero h2{
-font-size:40px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-}
-
-.course{
-background:white;
-margin:20px;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-.course h2{
+font-size:36px;
 margin-bottom:15px;
 }
 
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+}
+
+.course{
+background:#fff;
+margin:20px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.course h2{
+color:#0052cc;
+margin-bottom:10px;
+}
+
 button{
-background:#0066ff;
-color:white;
+background:#0052cc;
+color:#fff;
+padding:12px 22px;
 border:none;
-padding:12px 20px;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
-margin-top:10px;
+margin-top:15px;
 font-size:16px;
 }
 
 button:hover{
-background:#0044cc;
+background:#003d99;
 }
 
 footer{
-background:#222;
-color:white;
+background:#111;
+color:#fff;
 text-align:center;
 padding:20px;
-margin-top:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+header h1{font-size:30px;}
+.hero h2{font-size:28px;}
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
+<img src="47603.jpg" alt="IR Tech Academy Logo">
+
 <h1>IR Tech Academy</h1>
-<p>Programming | Microsoft Office | AI & Machine Learning</p>
+
+<p>Programming • Microsoft Office • AI & Machine Learning</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Courses</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<div class="hero">
+<section class="hero">
 <h2>Welcome to IR Tech Academy</h2>
-<p>
-Learn Programming, Microsoft Office, Artificial Intelligence
-and Machine Learning with Premium PDFs and Notes.
-</p>
-</div>
+
+<p>Learn Programming, Microsoft Office, Artificial Intelligence and Machine Learning with Premium PDFs, Notes and Tutorials.</p>
+
+</section>
+  <section id="courses">
 
 <div class="course">
-<h2>Programming PDFs</h2>
-<p>C, C++, Java, Python, JavaScript</p>
+<h2>💻 Programming PDFs</h2>
+<p>Learn C, C++, Java, Python, JavaScript and Web Development from beginner to advanced level.</p>
+
 <button onclick="window.open('https://wa.me/916206175829')">
 Buy Now
 </button>
 </div>
 
 <div class="course">
-<h2>Microsoft Office PDFs</h2>
-<p>MS Word, Excel, PowerPoint, Access</p>
+<h2>📊 Microsoft Office PDFs</h2>
+<p>Master MS Word, Excel, PowerPoint and Access with practical notes and examples.</p>
+
 <button onclick="window.open('https://wa.me/916206175829')">
 Buy Now
 </button>
 </div>
 
 <div class="course">
-<h2>AI & Machine Learning PDFs</h2>
-<p>Beginner to Advanced Level Notes</p>
+<h2>🤖 AI & Machine Learning PDFs</h2>
+<p>Complete study materials covering Artificial Intelligence, Machine Learning and Generative AI.</p>
+
 <button onclick="window.open('https://wa.me/916206175829')">
 Buy Now
 </button>
 </div>
 
+</section>
+
+<section id="about">
+
 <div class="course">
+
 <h2>About IR Tech Academy</h2>
+
 <p>
-IR Tech Academy is an online learning platform dedicated to helping
-students learn modern technology skills. We provide high-quality
-study materials, notes, tutorials and premium PDFs on Programming,
-Microsoft Office, Artificial Intelligence and Machine Learning.
+IR Tech Academy is an online learning platform dedicated to helping students build modern technology skills. We provide premium PDFs, notes, tutorials and practical learning resources in Programming, Microsoft Office, Artificial Intelligence and Machine Learning.
 </p>
+
 </div>
 
+</section>
+
+<section id="contact">
+
 <div class="course">
+
 <h2>Contact Us</h2>
 
 <p><b>Email:</b> rzamdistiyaque@gmail.com</p>
@@ -170,12 +208,36 @@ Microsoft Office, Artificial Intelligence and Machine Learning.
 <button onclick="window.open('https://www.youtube.com/@IRTechAcademy01')">
 Visit YouTube Channel
 </button>
+
+<button onclick="window.open('https://wa.me/916206175829')">
+Chat on WhatsApp
+</button>
+
 </div>
 
-<footer>
-<p>© 2026 IR Tech Academy</p>
+</section>
+  <footer>
+<p>© 2026 IR Tech Academy. All Rights Reserved.</p>
 <p>Programming | Microsoft Office | AI & Machine Learning</p>
 </footer>
 
+<a href="https://wa.me/916206175829"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
+">
+💬 WhatsApp
+</a>
+
 </body>
 </html>
+<img src="47603.jpg" alt="IR Tech Academy Logo">

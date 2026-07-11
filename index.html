@@ -1,273 +1,367 @@
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="istiyaque-logo.png" alt="Logo">
-      <span>Istiyaque Tech Academy</span>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Istiyaque Tech Academy</title>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(15,23,42,.8),
+rgba(15,23,42,.9)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+}
+
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:#111827;
+padding:30px;
+border-radius:20px;
+}
+
+.stat h2{
+font-size:45px;
+color:#38bdf8;
+}
+
+.contact{
+background:#111827;
+padding:40px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+background:#38bdf8;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.title{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Istiyaque Tech Academy</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="home" class="hero">
-  <div class="hero-content">
+<section class="hero" id="home">
 
-    <span class="badge">
-      🚀 Future Skills Platform
-    </span>
+<div>
 
-    <h1>
-      Learn Technology, AI & Future Skills
-    </h1>
+<h1>
+Learn <span>Technology</span><br>
+Like a Professional
+</h1>
 
-    <p>
-      Learn Programming, Data Analytics,
-      Artificial Intelligence, Web Development,
-      Microsoft Office and Freelancing Skills.
-    </p>
+<p>
+Programming, Artificial Intelligence,
+Data Analytics, Web Development,
+Microsoft Office and Freelancing Skills.
+</p>
 
-    <div class="hero-buttons">
-      <a href="#courses" class="btn1">
-        Explore Courses
-      </a>
+<a href="#courses" class="btn">
+Explore Courses
+</a>
 
-      <a href="https://wa.me/916206175829" class="btn1">
-        WhatsApp Us
-      </a>
-    </div>
+</div>
 
-  </div>
 </section>
 
 <section id="about">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>About Us</h2>
-      <p>
-        Istiyaque Tech Academy helps students
-        learn modern technology and job-ready skills.
-      </p>
-    </div>
+<h2 class="title">
+About Academy
+</h2>
 
-  </div>
+<div class="grid">
+
+<div class="card">
+<h3>Practical Learning</h3>
+<p>Industry level projects and assignments.</p>
+</div>
+
+<div class="card">
+<h3>Premium Notes</h3>
+<p>Easy to understand study materials.</p>
+</div>
+
+<div class="card">
+<h3>Career Support</h3>
+<p>Guidance for jobs and freelancing.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="courses">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Premium Courses</h2>
-    </div>
+<h2 class="title">
+Premium Courses
+</h2>
 
-    <div class="course-grid">
+<div class="grid">
 
-      <div class="course-card">
-        <i class="fab fa-python"></i>
-        <h3>Python Programming</h3>
-        <p>Beginner to Advanced</p>
-      </div>
+<div class="card">
+<h3>Python Programming</h3>
+<p>Beginner to Advanced Python.</p>
+</div>
 
-      <div class="course-card">
-        <i class="fab fa-html5"></i>
-        <h3>Web Development</h3>
-        <p>HTML CSS JavaScript</p>
-      </div>
+<div class="card">
+<h3>Web Development</h3>
+<p>HTML, CSS, JavaScript.</p>
+</div>
 
-      <div class="course-card">
-        <i class="fas fa-robot"></i>
-        <h3>Artificial Intelligence</h3>
-        <p>AI & Machine Learning</p>
-      </div>
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>AI and Machine Learning.</p>
+</div>
 
-      <div class="course-card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Data Analytics</h3>
-        <p>Excel, Power BI & SQL</p>
-      </div>
+<div class="card">
+<h3>Data Analytics</h3>
+<p>Excel, SQL and Power BI.</p>
+</div>
 
-      <div class="course-card">
-        <i class="fas fa-file-excel"></i>
-        <h3>Microsoft Office</h3>
-        <p>Word, Excel & PowerPoint</p>
-      </div>
+<div class="card">
+<h3>Java Programming</h3>
+<p>Core Java to Advanced.</p>
+</div>
 
-      <div class="course-card">
-        <i class="fab fa-java"></i>
-        <h3>Java Programming</h3>
-        <p>Core to Advanced</p>
-      </div>
+<div class="card">
+<h3>Microsoft Office</h3>
+<p>Word, Excel and PowerPoint.</p>
+</div>
 
-    </div>
+</div>
 
-  </div>
 </section>
 
-<section id="features">
-  <div class="container">
+<section>
 
-    <div class="section-title">
-      <h2>Why Choose Us</h2>
-    </div>
+<h2 class="title">
+Academy Statistics
+</h2>
 
-    <div class="feature-grid">
+<div class="stats">
 
-      <div class="feature-card">
-        <i class="fas fa-book-open"></i>
-        <h3>Premium Notes</h3>
-      </div>
+<div class="stat">
+<h2>1000+</h2>
+<p>Students</p>
+</div>
 
-      <div class="feature-card">
-        <i class="fas fa-certificate"></i>
-        <h3>Certificate</h3>
-      </div>
+<div class="stat">
+<h2>50+</h2>
+<p>Courses</p>
+</div>
 
-      <div class="feature-card">
-        <i class="fas fa-headset"></i>
-        <h3>24/7 Support</h3>
-      </div>
+<div class="stat">
+<h2>500+</h2>
+<p>Projects</p>
+</div>
 
-      <div class="feature-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Practical Projects</h3>
-      </div>
+<div class="stat">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
 
-    </div>
+</div>
 
-  </div>
-</section>
-
-<section class="stats">
-  <div class="container">
-
-    <div class="feature-grid">
-
-      <div class="stat-box">
-        <h2>1000+</h2>
-        <p>Students</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>50+</h2>
-        <p>Courses</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>500+</h2>
-        <p>Projects</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>24/7</h2>
-        <p>Support</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Student Reviews</h2>
-    </div>
-
-    <div class="course-grid">
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>Excellent Academy</p>
-        <h4>Rahul Kumar</h4>
-      </div>
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>Very Practical Learning</p>
-        <h4>Ayesha Khan</h4>
-      </div>
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>Highly Recommended</p>
-        <h4>Aman Singh</h4>
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
 <section id="contact">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Contact Us</h2>
-    </div>
+<h2 class="title">
+Contact Us
+</h2>
 
-    <div class="contact">
+<div class="contact">
 
-      <form>
+<input type="text" placeholder="Your Name">
 
-        <input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
 
-        <input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Message"></textarea>
 
-        <textarea rows="6" placeholder="Message"></textarea>
+<button>
+Send Message
+</button>
 
-        <button class="btn1">
-          Send Message
-        </button>
+</div>
 
-      </form>
-
-    </div>
-
-  </div>
 </section>
 
 <footer>
 
-  <h2>Istiyaque Tech Academy</h2>
+<h2>Istiyaque Tech Academy</h2>
 
-  <p>
-    Learn • Build • Grow
-  </p>
+<p>
+Email: rzamdistiyaque@gmail.com
+</p>
 
-  <p>
-    Email:
-    rzamdistiyaque@gmail.com
-  </p>
+<p>
+WhatsApp: +91 6206175829
+</p>
 
-  <p>
-    WhatsApp:
-    +91 6206175829
-  </p>
-
-  <p>
-    YouTube:
-    IR Tech Academy
-  </p>
-
-  <br>
-
-  <p>
-    © 2026 Istiyaque Tech Academy
-  </p>
+<p>
+YouTube: IR Tech Academy
+</p>
 
 </footer>
 
-<a href="https://wa.me/916206175829"
-class="whatsapp">
-
-  <i class="fab fa-whatsapp"></i>
-
-         </a>
+</body>
+  </html>

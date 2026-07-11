@@ -1,631 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>IR Tech Academy | Programming, Microsoft Office & AI</title>
-
-<meta name="description" content="Learn Programming, Microsoft Office, Artificial Intelligence and Machine Learning with IR Tech Academy.">
-
-<meta name="keywords" content="Programming, Python, Java, C++, AI, Machine Learning, Microsoft Office, Excel, Word">
-
-<meta name="author" content="IR Tech Academy">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<style>
-
-//* =====================================================
-   IR Tech Academy - Premium CSS (Part 5A)
-   Global Styles + Navbar + Hero
-===================================================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-:root{
-    --primary:#0052cc;
-    --secondary:#001d3d;
-    --accent:#00b894;
-    --light:#ffffff;
-    --dark:#111827;
-    --gray:#6b7280;
-    --bg:#f4f7fb;
-    --card:#ffffff;
-    --shadow:0 10px 30px rgba(0,0,0,.1);
-    --radius:16px;
-    --transition:.35s ease;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:var(--bg);
-    color:var(--dark);
-    line-height:1.7;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-a{
-    text-decoration:none;
-}
-
-ul{
-    list-style:none;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-section{
-    padding:80px 0;
-}
-
-/* ======================
-   Section Title
-====================== */
-
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-.section-title h2{
-    font-size:38px;
-    color:var(--secondary);
-    margin-bottom:15px;
-}
-
-.section-title p{
-    color:
-
-</style>
-
-</head>
-
-<body>
-
 <header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="istiyaque-logo.png" alt="Logo">
+      <span>Istiyaque Tech Academy</span>
+    </div>
 
-<nav class="navbar">
-
-<div class="logo">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<span>IR Tech Academy</span>
-
-</div>
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#features">Features</a></li>
-
-<li><a href="#courses">Courses</a></li>
-
-<li><a href="#reviews">Reviews</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<div class="right-menu">
-
-<button id="themeBtn">
-
-<i class="fa-solid fa-moon"></i>
-
-</button>
-
-</div>
-
-</nav>
-
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- HERO SECTION -->
-
 <section id="home" class="hero">
+  <div class="hero-content">
 
-<div class="hero-content">
+    <span class="badge">
+      🚀 Future Skills Platform
+    </span>
 
-<h1>
+    <h1>
+      Learn Technology, AI & Future Skills
+    </h1>
 
-Master Programming, AI & Microsoft Office
+    <p>
+      Learn Programming, Data Analytics,
+      Artificial Intelligence, Web Development,
+      Microsoft Office and Freelancing Skills.
+    </p>
 
-</h1>
+    <div class="hero-buttons">
+      <a href="#courses" class="btn1">
+        Explore Courses
+      </a>
 
-<p>
+      <a href="https://wa.me/916206175829" class="btn1">
+        WhatsApp Us
+      </a>
+    </div>
 
-Premium PDFs, Practical Notes, Video Tutorials and Complete Learning Resources.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#courses" class="btn1">
-
-Explore Courses
-
-</a>
-
-<a href="https://wa.me/916206175829"
-
-class="btn2">
-
-Chat on WhatsApp
-
-</a>
-
-</div>
-
-<div class="hero-stats">
-
-<div>
-
-<h2>500+</h2>
-
-<p>Students</p>
-
-</div>
-
-<div>
-
-<h2>100+</h2>
-
-<p>Premium PDFs</p>
-
-</div>
-
-<div>
-
-<h2>20+</h2>
-
-<p>Courses</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-  <!-- ========================= -->
-<!-- ABOUT SECTION -->
-<!-- ========================= -->
-
-<section id="about" class="about">
-
-<div class="container">
-
-<div class="section-title">
-<h2>About IR Tech Academy</h2>
-<p>Empowering students with practical technology skills for the modern world.</p>
-</div>
-
-<div class="about-grid">
-
-<div class="about-text">
-
-<h3>Learn Future Skills with Confidence</h3>
-
-<p>
-IR Tech Academy is an online learning platform focused on Programming,
-Microsoft Office, Artificial Intelligence and Machine Learning.
-We provide high-quality study materials, premium PDFs, practical notes,
-projects and easy-to-understand tutorials for beginners as well as advanced learners.
-</p>
-
-<p>
-Our goal is to make technology education simple, affordable and practical
-so every student can build real-world skills.
-</p>
-
-<a href="#courses" class="btn1">
-Start Learning
-</a>
-
-</div>
-
-<div class="about-image">
-
-<img src="47603.jpg"
-alt="IR Tech Academy Logo">
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- ========================= -->
-<!-- WHY CHOOSE US -->
-<!-- ========================= -->
-
-<section id="features" class="features">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Why Choose IR Tech Academy?</h2>
-<p>Everything you need to become job-ready.</p>
-</div>
-
-<div class="feature-grid">
-
-<div class="feature-card">
-<i class="fa-solid fa-book-open"></i>
-<h3>Premium PDFs</h3>
-<p>Well-designed study materials with practical examples.</p>
-</div>
-
-<div class="feature-card">
-<i class="fa-solid fa-code"></i>
-<h3>Programming</h3>
-<p>Learn C, C++, Java, Python, JavaScript and Web Development.</p>
-</div>
-
-<div class="feature-card">
-<i class="fa-solid fa-robot"></i>
-<h3>Artificial Intelligence</h3>
-<p>Master AI, Machine Learning and Generative AI fundamentals.</p>
-</div>
-
-<div class="feature-card">
-<i class="fa-solid fa-file-word"></i>
-<h3>Microsoft Office</h3>
-<p>MS Word, Excel, PowerPoint and Access with practical exercises.</p>
-</div>
-
-<div class="feature-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>Projects</h3>
-<p>Build real-world projects to improve your practical skills.</p>
-</div>
-
-<div class="feature-card">
-<i class="fa-solid fa-headset"></i>
-<h3>Student Support</h3>
-<p>Quick help and guidance through WhatsApp.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- SKILLS -->
-<!-- ========================= -->
-
-<section class="skills">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Technologies We Teach</h2>
-</div>
-
-<div class="skills-grid">
-
-<span>HTML5</span>
-<span>CSS3</span>
-<span>JavaScript</span>
-<span>Python</span>
-<span>C</span>
-<span>C++</span>
-<span>Java</span>
-<span>Microsoft Word</span>
-<span>Excel</span>
-<span>PowerPoint</span>
-<span>Artificial Intelligence</span>
-<span>Machine Learning</span>
-<span>Generative AI</span>
-<span>Git & GitHub</span>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- STATISTICS -->
-<!-- ========================= -->
-
-<section class="stats">
-
-<div class="container">
-
-<div class="stat-box">
-
-<h2 class="counter" data-target="500">0</h2>
-
-<p>Happy Students</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2 class="counter" data-target="100">0</h2>
-
-<p>Premium PDFs</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2 class="counter" data-target="20">0</h2>
-
-<p>Courses</p>
-
-</div>
-
-<div class="stat-box">
-
-<h2 class="counter" data-target="24">0</h2>
-
-<p>Support Hours</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- MISSION -->
-<!-- ========================= -->
-
-<section class="mission">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Mission</h2>
-
-</div>
-
-<p style="text-align:center;max-width:900px;margin:auto;line-height:1.8;">
-
-Our mission is to provide affordable, high-quality technical education that helps students build practical skills in Programming, Microsoft Office, Artificial Intelligence and Machine Learning. We aim to prepare learners for higher education, freelancing and successful careers in technology.
-
-</p>
-
-</div>
-
-</section>
-  <!-- ========================= -->
-<!-- COURSES SECTION -->
-<!-- ========================= -->
-
-<section id="courses" class="courses">
-
+<section id="about">
   <div class="container">
 
     <div class="section-title">
-      <h2>Our Premium Courses</h2>
-      <p>Choose the course that matches your learning goals.</p>
+      <h2>About Us</h2>
+      <p>
+        Istiyaque Tech Academy helps students
+        learn modern technology and job-ready skills.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="courses">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Premium Courses</h2>
     </div>
 
     <div class="course-grid">
 
       <div class="course-card">
-        <i class="fa-solid fa-code"></i>
-        <h3>Programming</h3>
-        <p>Learn C, C++, Java, Python, JavaScript and Web Development from beginner to advanced.</p>
-
-        <ul>
-          <li>✔ Premium PDF Notes</li>
-          <li>✔ Practical Examples</li>
-          <li>✔ Beginner Friendly</li>
-        </ul>
-
-        <a href="https://wa.me/916206175829" class="btn1">
-          Buy Now
-        </a>
+        <i class="fab fa-python"></i>
+        <h3>Python Programming</h3>
+        <p>Beginner to Advanced</p>
       </div>
 
       <div class="course-card">
-        <i class="fa-solid fa-file-excel"></i>
-        <h3>Microsoft Office</h3>
-        <p>Master Word, Excel, PowerPoint and Access with practical exercises.</p>
-
-        <ul>
-          <li>✔ Premium Notes</li>
-          <li>✔ Real Projects</li>
-          <li>✔ Easy to Learn</li>
-        </ul>
-
-        <a href="https://wa.me/916206175829" class="btn1">
-          Buy Now
-        </a>
+        <i class="fab fa-html5"></i>
+        <h3>Web Development</h3>
+        <p>HTML CSS JavaScript</p>
       </div>
 
       <div class="course-card">
-        <i class="fa-solid fa-robot"></i>
+        <i class="fas fa-robot"></i>
         <h3>Artificial Intelligence</h3>
-        <p>Understand AI, Machine Learning and Generative AI with practical examples.</p>
+        <p>AI & Machine Learning</p>
+      </div>
 
-        <ul>
-          <li>✔ AI Basics</li>
-          <li>✔ Machine Learning</li>
-          <li>✔ Generative AI</li>
-        </ul>
+      <div class="course-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analytics</h3>
+        <p>Excel, Power BI & SQL</p>
+      </div>
 
-        <a href="https://wa.me/916206175829" class="btn1">
-          Buy Now
-        </a>
+      <div class="course-card">
+        <i class="fas fa-file-excel"></i>
+        <h3>Microsoft Office</h3>
+        <p>Word, Excel & PowerPoint</p>
+      </div>
+
+      <div class="course-card">
+        <i class="fab fa-java"></i>
+        <h3>Java Programming</h3>
+        <p>Core to Advanced</p>
       </div>
 
     </div>
 
   </div>
-
 </section>
 
-<!-- ========================= -->
-<!-- CERTIFICATE -->
-<!-- ========================= -->
-
-<section class="certificate">
-
+<section id="features">
   <div class="container">
 
     <div class="section-title">
-      <h2>Certificate of Completion</h2>
-    </div>
-
-    <p style="text-align:center;max-width:800px;margin:auto;">
-      Complete your selected course and receive a professional Certificate of Completion from IR Tech Academy.
-    </p>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- TESTIMONIALS -->
-<!-- ========================= -->
-
-<section id="reviews" class="testimonials">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Student Reviews</h2>
-      <p>What our learners say.</p>
-    </div>
-
-    <div class="testimonial-grid">
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>"Very easy notes and practical explanations. Highly recommended."</p>
-        <h4>- Rahul Kumar</h4>
-      </div>
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>"Programming PDFs are excellent and easy to understand."</p>
-        <h4>- Ayesha Khan</h4>
-      </div>
-
-      <div class="testimonial-card">
-        ⭐⭐⭐⭐⭐
-        <p>"Best place to learn AI and Microsoft Office at an affordable price."</p>
-        <h4>- Aman Singh</h4>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- FAQ -->
-<!-- ========================= -->
-
-<section id="faq" class="faq">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Frequently Asked Questions</h2>
-    </div>
-
-    <div class="faq-item">
-      <h3>Do I get PDF notes?</h3>
-      <p>Yes. Every course includes high-quality PDF study material.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>How do I purchase a course?</h3>
-      <p>Click the "Buy Now" button to contact us on WhatsApp.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Are the courses beginner friendly?</h3>
-      <p>Yes. All courses are designed for beginners as well as intermediate learners.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Will I receive support?</h3>
-      <p>Yes. We provide support through WhatsApp.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- LATEST UPDATES -->
-<!-- ========================= -->
-
-<section class="updates">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Latest Updates</h2>
+      <h2>Why Choose Us</h2>
     </div>
 
     <div class="feature-grid">
 
       <div class="feature-card">
-        <i class="fa-solid fa-bullhorn"></i>
-        <h3>New AI Course</h3>
-        <p>Coming Soon with updated Generative AI content.</p>
+        <i class="fas fa-book-open"></i>
+        <h3>Premium Notes</h3>
       </div>
 
       <div class="feature-card">
-        <i class="fa-solid fa-book"></i>
-        <h3>New Programming PDFs</h3>
-        <p>Updated Python and JavaScript study materials.</p>
+        <i class="fas fa-certificate"></i>
+        <h3>Certificate</h3>
       </div>
 
       <div class="feature-card">
-        <i class="fa-solid fa-video"></i>
-        <h3>Video Tutorials</h3>
-        <p>Video lessons will be added soon.</p>
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Practical Projects</h3>
       </div>
 
     </div>
 
   </div>
-
 </section>
-<div class="logo">
-    <img src="logo.png" alt="Istiyaque Tech Academy Logo">
-</div>
 
+<section class="stats">
+  <div class="container">
+
+    <div class="feature-grid">
+
+      <div class="stat-box">
+        <h2>1000+</h2>
+        <p>Students</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>50+</h2>
+        <p>Courses</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>500+</h2>
+        <p>Projects</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Support</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Student Reviews</h2>
+    </div>
+
+    <div class="course-grid">
+
+      <div class="testimonial-card">
+        ⭐⭐⭐⭐⭐
+        <p>Excellent Academy</p>
+        <h4>Rahul Kumar</h4>
+      </div>
+
+      <div class="testimonial-card">
+        ⭐⭐⭐⭐⭐
+        <p>Very Practical Learning</p>
+        <h4>Ayesha Khan</h4>
+      </div>
+
+      <div class="testimonial-card">
+        ⭐⭐⭐⭐⭐
+        <p>Highly Recommended</p>
+        <h4>Aman Singh</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact">
+
+      <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea rows="6" placeholder="Message"></textarea>
+
+        <button class="btn1">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+
+  <h2>Istiyaque Tech Academy</h2>
+
+  <p>
+    Learn • Build • Grow
+  </p>
+
+  <p>
+    Email:
+    rzamdistiyaque@gmail.com
+  </p>
+
+  <p>
+    WhatsApp:
+    +91 6206175829
+  </p>
+
+  <p>
+    YouTube:
+    IR Tech Academy
+  </p>
+
+  <br>
+
+  <p>
+    © 2026 Istiyaque Tech Academy
+  </p>
+
+</footer>
+
+<a href="https://wa.me/916206175829"
+class="whatsapp">
+
+  <i class="fab fa-whatsapp"></i>
+
+         </a>

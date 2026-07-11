@@ -71,3 +71,354 @@ section{
 
 .section-title p{
     color:
+/* =========================
+   CSS PART 2 - ADVANCED
+========================= */
+
+/* Smooth Scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Section Animation */
+section{
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Course Card Hover Effect */
+.course{
+    transition:0.3s;
+}
+
+.course:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Button Hover */
+.btn{
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+/* Navigation Hover */
+nav a{
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0d6efd;
+}
+
+/* Contact Box */
+.contact{
+    transition:0.3s;
+}
+
+.contact:hover{
+    transform:scale(1.02);
+}
+
+/* Footer */
+footer{
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* Scrollbar Design */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0044cc;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .course,
+.dark-mode .contact,
+.dark-mode .youtube-box{
+    background:#1f1f1f;
+    color:white;
+}
+
+/* Statistics Section */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.1);
+    text-align:center;
+    min-width:200px;
+}
+
+.stat-box h2{
+    color:#0d6efd;
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .stats{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+   }
+   /* ==========================
+   PREMIUM GLASSMORPHISM UI
+========================== */
+
+.glass-card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   DARK MODE BUTTON
+========================== */
+
+.theme-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:50px;
+    cursor:pointer;
+    z-index:999;
+}
+
+.theme-btn:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   ADMISSION FORM
+========================== */
+
+.admission-form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.admission-form button{
+    width:100%;
+    background:#0d6efd;
+    color:white;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+/* ==========================
+   CERTIFICATE GALLERY
+========================== */
+
+.certificate-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.certificate-gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.certificate-gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.review-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.review-card h4{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   COURSE PRICE CARD
+========================== */
+
+.price-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.price{
+    font-size:35px;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.social-icons a{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* ==========================
+   FOOTER PREMIUM
+========================== */
+
+footer{
+    background:#001f5b;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    margin:10px 0;
+   }
